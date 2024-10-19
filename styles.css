@@ -1,0 +1,534 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Nav Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    list-style: none;
+}
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* User */
+.user {
+    border: 1px solid black;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+.nav-icons img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #7A9D75;
+    color: #fff;
+    text-align: start;
+    object-fit: cover;
+    border: 10px solid #fff;
+    border-radius: 35px;
+    padding: 40px;
+}
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 45%;
+}
+.cta-button {
+    background-color: #fff;
+    color: #7A9D75;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+/* Favourite Brands Section */
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.favourite-brands {
+    padding: 40px 20px;
+}
+.brands-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brands-text {
+    width: 40%;
+}
+.carousel {
+    width: 50%;
+    position: relative;
+}
+.carousel-wrapper {
+    overflow: hidden;
+}
+.brand-cards {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.card {
+    min-width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.prev-arrow, .next-arrow {
+    background-color: #7A9D75;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* See More Button */
+.see-more-button {
+    background-color: #7A9D75;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+.see-more-button:hover {
+    filter: brightness(0.8);
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F7F7F7;
+}
+.about-item {
+    display: inline-block;
+    position: relative;
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    margin: 10px;
+    width: 20%;
+    height: 200px;
+}
+.about-item img {
+    width: 30px;
+}
+.about-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.about-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Journal Section */
+.journal {
+    padding: 40px 20px;
+    background-color: #7A9D75;
+    color: #fff;
+    text-align: center;
+}
+.journal h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.journal p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.journal-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.jcard {
+    background-color: #EEE;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+.jcard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.jcard-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Hover Effects */
+.journal-cards:hover .jcard {
+    opacity: 0.5;
+}
+.jcard:hover {
+    opacity: 1 !important;
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* Explore Button */
+.explore-button {
+    background-color: #fff;
+    color: #7A9D75;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+.explore-button:hover {
+    filter: brightness(0.9);
+}
+
+/* Footer */
+footer {
+    background-color: #899499;
+    color: #36454F;
+    padding: 20px 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding-left: 5px;
+}
+
+.footer-logo {
+    width: 30%;
+    text-align: left; 
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    text-align: left; 
+}
+
+.footer-links ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.footer-links div {
+    margin-left: 50px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #2E3D42; 
+    font-weight: 500; 
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;         
+    font-weight: bold; 
+}
+
+.footer-text {
+    font-size: 14px; 
+    color: #36454F;
+}
+
+/* Social icons */
+.social-icons a {
+    margin-right: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #7A9D75;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #333;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.question-page {
+    display: block;
+}
+
+.thank-you-message {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Page styling */
+.question-page {
+    display: none;
+}
+
+#page1 {
+    display: block;
+}
+
+/* Add a Media Query for Small Screens */
+@media (max-width: 768px) {
+    /* Hide all nav links except cart, user, and menu */
+    nav {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    .nav-links {
+        display: none; /* Hide all links */
+    }
+
+    .nav-icons {
+        display: flex; 
+        justify-content: center; 
+        margin: 10px 0; 
+    }
+
+    /* Align hero content in a column */
+    .hero-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    /* Adjust the favourite brands section */
+    .brands-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+    }
+    
+    /* Stack about us items vertically and center align */
+    .about-us .about-item {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+        margin: 10px auto; 
+    }
+    
+    /* Stack journal cards vertically */
+    .journal-cards {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    /* Hide Information, Company, and Contact sections */
+    .footer-links, /* Assuming these classes contain the links */
+    .information, 
+    .company, 
+    .contact {
+        display: none; /* Hide these sections */
+    }
+
+    .footer-content {
+        display: flex; /* Maintain a flex layout */
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center; /* Center footer content */
+        text-align: center; /* Center text */
+        width: 100%; /* Full width for the footer */
+        padding: 10px 0; /* Add padding for spacing */
+    }
+
+    /* Style for social icons container */
+    .social-icons {
+        display: flex; /* Use flexbox to align items side by side */
+        justify-content: center; /* Center the icons */
+        align-items: center; /* Align items vertically */
+        margin: 10px 0; /* Space out the social icons */
+    }
+
+    .social-icons a {
+        margin: 0 10px; /* Space out individual social icons */
+        text-decoration: none; /* Remove underline from links */
+    }
+    .footer-text {
+        display: flex; /* Use flexbox to align items side by side */
+        justify-content: center; /* Center the icons */
+        align-items: center; /* Align items vertically */
+        margin: 10px 0; /* Space out the social icons */
+    }
+}
+
+/* Side Menu */
+#side-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Set to -100% to hide by default */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(122, 157, 117, 0.9);
+    color: white;
+    transition: right 0.5s ease; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#side-menu.hidden {
+    right: -100%; /* Move out of view */
+}
+
+#side-menu.show-menu {
+    right: 0; /* Slide in */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide all links */
+    }
+
+    /* Show the menu icon only on small screens */
+    #menu-trigger {
+        display: block; /* Show the menu icon */
+    }
+}
+
+@media (min-width: 769px) {
+    #menu-trigger {
+        display: none; /* Hide the menu icon on larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide all links */
+    }
+
+    /* Show the menu icon only on small screens */
+    #menu-trigger {
+        display: block; /* Show the menu icon */
+    }
+
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Add some space between the logo and icons */
+    }
+
+    .nav-icons {
+        display: flex; /* Ensure icons stay as a flexbox */
+        justify-content: center; /* Center icons horizontally */
+        width: 100%; /* Take full width */
+        margin-top: 20px; /* Add some margin at the top to space from logo */
+    }
+
+    .nav-icons img {
+        margin-left: 10px; /* Adjust margin between icons */
+        margin-right: 10px; /* Adjust margin between icons */
+    }
+}
+
