@@ -375,8 +375,8 @@ footer {
 @media (max-width: 768px) {
     /* Hide all nav links except cart, user, and menu */
     nav {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
     
     .nav-links {
@@ -399,61 +399,61 @@ footer {
 
     /* Adjust the favourite brands section */
     .brands-content {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
     
     /* Stack about us items vertically and center align */
     .about-us .about-item {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         justify-content: center;
-        align-items: center; /* Center items horizontally */
-        text-align: center; /* Center text */
+        align-items: center; 
+        text-align: center; 
         margin: 10px auto; 
     }
     
     /* Stack journal cards vertically */
     .journal-cards {
         display: flex;
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center cards horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     /* Hide Information, Company, and Contact sections */
-    .footer-links, /* Assuming these classes contain the links */
+    .footer-links,
     .information, 
     .company, 
     .contact {
-        display: none; /* Hide these sections */
+        display: none; 
     }
 
     .footer-content {
-        display: flex; /* Maintain a flex layout */
-        flex-direction: column; /* Stack footer content vertically */
-        align-items: center; /* Center footer content */
-        text-align: center; /* Center text */
-        width: 100%; /* Full width for the footer */
-        padding: 10px 0; /* Add padding for spacing */
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        width: 100%; 
+        padding: 10px 0; 
     }
 
     /* Style for social icons container */
     .social-icons {
-        display: flex; /* Use flexbox to align items side by side */
-        justify-content: center; /* Center the icons */
-        align-items: center; /* Align items vertically */
-        margin: 10px 0; /* Space out the social icons */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 10px 0; 
     }
 
     .social-icons a {
-        margin: 0 10px; /* Space out individual social icons */
-        text-decoration: none; /* Remove underline from links */
+        margin: 0 10px; 
+        text-decoration: none; 
     }
     .footer-text {
-        display: flex; /* Use flexbox to align items side by side */
-        justify-content: center; /* Center the icons */
-        align-items: center; /* Align items vertically */
-        margin: 10px 0; /* Space out the social icons */
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin: 10px 0; 
     }
 }
 
@@ -475,60 +475,61 @@ footer {
 }
 
 #side-menu.hidden {
-    right: -100%; /* Move out of view */
+    right: -100%; 
 }
 
 #side-menu.show-menu {
-    right: 0; /* Slide in */
+    right: 0; 
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide all links */
+        display: none; 
     }
 
     /* Show the menu icon only on small screens */
     #menu-trigger {
-        display: block; /* Show the menu icon */
+        display: block; 
     }
 }
 
+/* Hide menu icon on large screens  */
 @media (min-width: 769px) {
     #menu-trigger {
-        display: none; /* Hide the menu icon on larger screens */
+        display: none; 
     }
 }
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Hide all links */
+        display: none; 
     }
 
     /* Show the menu icon only on small screens */
     #menu-trigger {
-        display: block; /* Show the menu icon */
+        display: block; 
     }
 
     nav {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .logo {
-        margin-bottom: 20px; /* Add some space between the logo and icons */
+        margin-bottom: 20px;
     }
 
     .nav-icons {
-        display: flex; /* Ensure icons stay as a flexbox */
-        justify-content: center; /* Center icons horizontally */
-        width: 100%; /* Take full width */
-        margin-top: 20px; /* Add some margin at the top to space from logo */
+        display: flex; 
+        justify-content: center; 
+        width: 100%;
+        margin-top: 20px; 
     }
 
     .nav-icons img {
-        margin-left: 10px; /* Adjust margin between icons */
-        margin-right: 10px; /* Adjust margin between icons */
+        margin-left: 10px; 
+        margin-right: 10px; 
     }
 }
 
