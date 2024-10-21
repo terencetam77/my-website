@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-      // Modal open/close
+      // Modal questionnaire open/close
       const openModal = document.getElementById('openModal');
       const closeModal = document.getElementById('closeModal');
       const modal = document.getElementById('questionnaireModal');
@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
+// Carousel functions and navigations
 document.addEventListener('DOMContentLoaded', function() {
     const prevArrow = document.querySelector('.prev-arrow');
     const nextArrow = document.querySelector('.next-arrow');
@@ -105,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// script.js
+// Side menu toggles
 document.getElementById('menu-trigger').addEventListener('click', sideMenuAppears);
 document.getElementById('menu-close').addEventListener('click', sideMenuDisappears);
 
